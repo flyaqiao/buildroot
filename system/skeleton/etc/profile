@@ -9,6 +9,7 @@ if [ "$PS1" ]; then
 fi
 
 export EDITOR='/bin/vi'
+export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "
 
 # Source configuration files from /etc/profile.d
 for i in /etc/profile.d/*.sh ; do
