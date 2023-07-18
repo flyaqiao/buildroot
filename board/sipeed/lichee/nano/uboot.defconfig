@@ -22,7 +22,12 @@ CONFIG_DEFAULT_ENV_FILE="../../../board/allwinner/generic/uboot.env"
 
 CONFIG_BOOTDELAY=0
 
+CONFIG_VIDEO=y
 CONFIG_VIDEO_LCD_MODE="x:480,y:272,depth:18,pclk_khz:9000,le:39,ri:8,up:2,lo:4,hs:4,vs:10,sync:3,vmode:0"
+# CONFIG_VIDEO_LCD_BL_PWM="PE6"
+# CONFIG_VIDEO_LCD_BL_PWM_ACTIVE_LOW=n
+# CONFIG_DM_PWM=y
+# CONFIG_PWM_SUNXI=y
 CONFIG_BOOTCOMMAND="setenv lcd_bl_pin 134; run distro_bootcmd;"
 
 CONFIG_NET=n
@@ -68,3 +73,24 @@ CONFIG_DFU_TIMEOUT=y
 CONFIG_DFU_MMC=y
 CONFIG_DFU_SF=y
 CONFIG_DFU_MTD=y
+
+#
+# Misc commands
+#
+CONFIG_CMD_BMP=y
+# CONFIG_CMD_BSP is not set
+CONFIG_CMD_BLOCK_CACHE=y
+# CONFIG_CMD_CACHE is not set
+# CONFIG_CMD_CONITRACE is not set
+# CONFIG_CMD_CLS is not set
+# CONFIG_CMD_EXCEPTION is not set
+# CONFIG_CMD_DATE is not set
+# CONFIG_CMD_TIME is not set
+# CONFIG_CMD_GETTIME is not set
+CONFIG_CMD_MISC=y
+# CONFIG_MP is not set
+# CONFIG_CMD_TIMER is not set
+CONFIG_CMD_SYSBOOT=y
+# CONFIG_CMD_QFW is not set
+# CONFIG_CMD_TERMINAL is not set
+# CONFIG_CMD_UUID is not set
