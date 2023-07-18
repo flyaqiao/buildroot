@@ -12,7 +12,7 @@
 		#size-cells = <1>;
 		ranges;
 
-		bootargs = "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p3 rw rootfstype=ext4 rootwait";
+		bootargs = "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p3 rw rootfstype=ext4 rootwait mem=30M";
 		// bootargs = "console=ttyS0,115200 earlyprintk rootwait init=/preinit root=/dev/mtdblock2 rootfstype=squashfs overlayfsdev=/dev/mtdblock3";
 
 		// simplefb_lcd: framebuffer-lcd0 {
